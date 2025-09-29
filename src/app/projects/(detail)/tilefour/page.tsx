@@ -16,7 +16,7 @@ export default function TileFourProject() {
           fill
       />
       </div>
-      <div className={styles.impact}>I led design for Mini Meet, the composable, flexible platform that supports Meet's large event partership with Brandlive, Google Chat Huddles, and picture in picture.
+      <div className={styles.impact}>I led design for Mini Meet, the composable, flexible platform that supports Meet&apos;s large event partership with Brandlive, Google Chat Huddles, and picture in picture.
       </div>
       <Minimeet />
 

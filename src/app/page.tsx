@@ -16,7 +16,7 @@ export default function Home() {
         </div>
 
         <div className={styles.blurb}>
-        I love understanding technical details and prototyping in code. I've shipped large, cross product features used by millions at <span className={styles.bubble}>Google Meet</span>, and features that are critical toschool district administrators work at <span className={styles.bubble}>Informedk12</span>.
+        I love understanding technical details and prototyping in code. I&apos;ve shipped large, cross product features used by millions at <span className={styles.bubble}>Google Meet</span>, and features that are critical toschool district administrators work at <span className={styles.bubble}>Informedk12</span>.
         <br></br>
         <br></br>
         Currently I am focused on how AI can make meetings better, before, during, and after.
@@ -49,7 +49,7 @@ export default function Home() {
                     Working in AI
                   </div>
                   <div className={styles.title}>
-                    Reflections, since I cant share what I'm currently working on.
+                    Reflections, since I cant share what I&apos;m currently working on.
                   </div>
                 </div>
               </Link>
@@ -64,7 +64,7 @@ export default function Home() {
                     Take notes with Gemini
                   </div>
                   <div className={styles.title}>
-                    Helping people who cant make the meeting
+                    Helping people who can&apos;t make the meeting
                   </div>
                 </div>
               </Link>

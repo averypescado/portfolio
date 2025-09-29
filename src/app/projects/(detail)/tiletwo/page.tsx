@@ -1,14 +1,13 @@
 import styles from "../layout.module.css";
 import Image from "next/image";
 import Bottomnav from "../../_components/bottomnav/Bottomnav";
-import ShinyButton from "../../_components/shinybutton/ShinyButton";
 
 export default function TileTwoProject() {
   return (
     <>
     <div className={styles.main}>
       <p>Working in AI</p>
-      <h1>Reflections, since I cant share what I'm currently working on.</h1>
+      <h1>Reflections, since I can&apos;t share what I&apos;m currently working on.</h1>
       <div className={styles.hero}>
       <Image
           src="/aipic.png"
@@ -19,7 +18,7 @@ export default function TileTwoProject() {
       </div>
       <div className={styles.process}>
       <p>
-      Since early 2024, I’ve been focused on how AI can help make meetings better. I’ve worked on features related to Meet’s built in AI note-taker, and a few other projects which have not been announced yet. While I can’t speak about those projects specifically, I’ll describe what I’ve learned along the way.
+      Since early 2024, I&apos;ve been focused on how AI can help make meetings better. I&apos;ve worked on features related to Meet&apos;s built in AI note-taker, and a few other projects which have not been announced yet. While I can&apos;t speak about those projects specifically, I&apos;ll describe what I&apos;ve learned along the way.
       </p>
        
 
@@ -44,14 +43,14 @@ export default function TileTwoProject() {
     </p>
 
     <p>
-    I made a react prototype that leveraged Workspace apis and Gemini api to connect to users’ actual data. Sharing the prototype around built a lot of excitement within the team, and was an integral part of getting the work prioritized. It also played a big role in getting an adjacent product team on board to team up.
+    I made a react prototype that leveraged Workspace apis and Gemini api to connect to users&apos; actual data. Sharing the prototype around built a lot of excitement within the team, and was an integral part of getting the work prioritized. It also played a big role in getting an adjacent product team on board to team up.
     </p>
 
     <p>
-    Though it was far from production level code, it gave our team something to shape. With real data, it became quickly apparent what context was useful, what wasn't, and how we might go about creating something valuable.
+    Though it was far from production level code, it gave our team something to shape. With real data, it became quickly apparent what context was useful, what wasn&apos;t, and how we might go about creating something valuable.
     </p>
     <p>
-    I’ve led the design track since, targeting a launch this year.
+    I&apos;ve led the design track since, targeting a launch this year.
     </p>  
 
     <div className={styles.piccontain}>
@@ -68,11 +67,11 @@ export default function TileTwoProject() {
         <div className={styles.section}>Design for now and tomorrow. Clearly communicate.</div>
 
         <p>
-        Things move fast in tech, and things in AI have been moving even faster. It’s a common saying that teams need to design products for where the world is going.
+        Things move fast in tech, and things in AI have been moving even faster. It&apos;s a common saying that teams need to design products for where the world is going.
 
         </p>
         <p>
-        Within a single feature, it’s important to design for present day, where they might go in the near future, and further out. It is equally as important to understand and clearly communicate what needs to be true (usually model improvements) to enable those experiences. Designing features that rely on only significant improvement in AI models and understanding significantly slows down momentum because we don’t want to wait, we need to make continuous improvements. These are also full of assumptions, since nobody really knows exactly where things are going.
+        Within a single feature, it&apos;s important to design for present day, where they might go in the near future, and further out. It is equally as important to understand and clearly communicate what needs to be true (usually model improvements) to enable those experiences. Designing features that rely on only significant improvement in AI models and understanding significantly slows down momentum because we don&apos;t want to wait, we need to make continuous improvements. These are also full of assumptions, since nobody really knows exactly where things are going.
         </p>
         <p>
         Conversely, only designing for the present day runs the risk of only making incremental change, and missing step changes that may happen.

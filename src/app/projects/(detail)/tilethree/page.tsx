@@ -3,7 +3,6 @@ import Image from "next/image";
 import YoutubeWidge from "../../_components/youtubewidge/YoutubeWidge";
 import NudgeWidget from "../../_components/nudgewidget/Nudgewidget";
 import QuoteContain from "../../_components/quotecontain/Quotecontain";
-import { Quote } from "lucide-react";
 import Problem from "../../_components/problem/Problem";
 import Bottomnav from "../../_components/bottomnav/Bottomnav";
 
@@ -21,7 +20,7 @@ export default function TileThreeProject() {
       />
 
       </div>
-      <div className={styles.impact}>Contextual nudges to turn on notes was the first growth experiment for Meet’s flagship AI feature, Take Notes for Me. This features usage was called out by Sundar in recent earnings call.
+      <div className={styles.impact}>Contextual nudges to turn on notes was the first growth experiment for Meet&apos;s flagship AI feature, Take Notes for Me. This features usage was called out by Sundar in recent earnings call.
       </div> 
 
       <YoutubeWidge videoId="BtXRNTgsgpU" start={352} end={357} />
@@ -39,13 +38,13 @@ export default function TileThreeProject() {
       <div className={styles.process}>
         <div className={styles.section}>Process</div>
         <p>
-          In August 2023, Google Meet announced the feature "Attend for Me" at Google Cloud NEXT. It attracted a lot of attention, as people were intrigued by the promise of having less meetings.
+          In August 2023, Google Meet announced the feature &quot;Attend for Me&quot; at Google Cloud NEXT. It attracted a lot of attention, as people were intrigued by the promise of having less meetings.
         </p>
       </div>
       <QuoteContain />
       <div className={styles.process}>
         <p>
-          The problem was, there was a big difference between what was announced and what we were going to launch anytime soon. Almost a year after the announcement, we still hadn't launched anything. The team was getting stressed and ancy, I was tasked with creating a plan for how we could launch and continuously improve.
+          The problem was, there was a big difference between what was announced and what we were going to launch anytime soon. Almost a year after the announcement, we still hadn&apos;t launched anything. The team was getting stressed and ancy, I was tasked with creating a plan for how we could launch and continuously improve.
         </p>
       </div>
 
@@ -61,11 +60,11 @@ export default function TileThreeProject() {
         
         <div className={styles.process}>
           <p><b>Creating a plan</b><br></br>
-          After aligning on the problem, I spent the next few weeks working with the team on a proposal for how we could solve the user problem immediately, and then continuously improve over time. The plan clearly laid out how we could start by being helpful with a nudge to hosts when somebody marked “attend for me” in calendar.
+          After aligning on the problem, I spent the next few weeks working with the team on a proposal for how we could solve the user problem immediately, and then continuously improve over time. The plan clearly laid out how we could start by being helpful with a nudge to hosts when somebody marked &quot;attend for me&quot; in calendar.
           <br></br><br></br>
           Then we could move on to being helpful and personalized, then finally being helpful, personalized and proactive.
           <br></br><br></br>
-          I presented the proposal to leadership to positive feedback. A few weeks later, we launched the host nudge. When a user marks “No” as an rsvp, and the meeting starts, the host is automatically notified to turn on the notes.
+          I presented the proposal to leadership to positive feedback. A few weeks later, we launched the host nudge. When a user marks &quot;No&quot; as an rsvp, and the meeting starts, the host is automatically notified to turn on the notes.
           </p>
           <div className={styles.roadmap}>
             <Image 
@@ -78,7 +77,7 @@ export default function TileThreeProject() {
 
         <p>
         <b>Returning to the core problem and reassessing</b><br></br>
-        The host nudges were extremely successful in getting people to turn on notes more often, and in people feeling more secure in saying “no” to a meeting. Soon after that, we got new product leadership. Since we had clear milestones laid out, it was easy for them to take a look at our plan, and decide that it wasn’t the right time to invest towards getting to “personalized” or “personalized and proactive.”       
+        The host nudges were extremely successful in getting people to turn on notes more often, and in people feeling more secure in saying &quot;no&quot; to a meeting. Soon after that, we got new product leadership. Since we had clear milestones laid out, it was easy for them to take a look at our plan, and decide that it wasn&apos;t the right time to invest towards getting to &quot;personalized&quot; or &quot;personalized and proactive.&quot;       
         <br></br><br></br>
         By grounding ourselves in the core problem, our team made immediate impact, and make and informed decision about when to pause.
          </p>

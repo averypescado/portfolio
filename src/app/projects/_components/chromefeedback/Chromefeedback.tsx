@@ -16,28 +16,23 @@ export default function Chromefeedback() {
       };
 
       const set0 = () => {
-        selected==0 ? setSelected(5) :
-        setSelected(0);
+        selected === 0 ? setSelected(5) : setSelected(0);
       }
 
     const set1 = () => {
-        selected==1 ? setSelected(5) :
-        setSelected(1);
+        selected === 1 ? setSelected(5) : setSelected(1);
       }
 
     const set2 = () => {
-        selected==2 ? setSelected(5) :
-        setSelected(2);
+        selected === 2 ? setSelected(5) : setSelected(2);
     }
 
     const set3 = () => {
-        selected==3 ? setSelected(5) :
-        setSelected(3);
+        selected === 3 ? setSelected(5) : setSelected(3);
     }
 
     const set4 = () => {
-        selected==4 ? setSelected(5) :
-        setSelected(4);
+        selected === 4 ? setSelected(5) : setSelected(4);
     }
 
     return (
@@ -48,7 +43,7 @@ export default function Chromefeedback() {
                 <div><CirclePlus color="grey" size={18} /></div>
                 <div>
                     <div><b>Overview</b></div>
-                    {selected==0 ? 
+                    {selected === 0 ? 
                         <div>
                             <p> Required people to find the non-obvious entry point, and was limited once people were in it.</p>
 
@@ -66,7 +61,7 @@ export default function Chromefeedback() {
                     <div>
                         <div><b>Not flexible enough</b></div>
 
-                        {selected==1 ? 
+                        {selected === 1 ? 
                             <div>
                                 Fixed aspect ratio<br></br>
                                 Small max size
@@ -80,9 +75,9 @@ export default function Chromefeedback() {
                     <div><CirclePlus color="grey" size={18} /></div>
                     <div>
                         <div><b>Not discoverable/contextual</b></div>
-                        {selected==2 ? 
+                        {selected === 2 ? 
                             <div>
-                            "Why do I have to select when presenting? Why doesn't it automatically apply?'
+                            &quot;Why do I have to select when presenting? Why doesn&apos;t it automatically apply?&apos;
 
                             </div>: null
                         }
@@ -93,7 +88,7 @@ export default function Chromefeedback() {
                     <div><CirclePlus color="grey" size={18} /></div>
                     <div>
                         <div><b>Limited feature set</b></div>
-                        {selected==3 ? 
+                        {selected === 3 ? 
                                 <div>
                                 Only toggling audio and video and hangup.
 
@@ -107,7 +102,7 @@ export default function Chromefeedback() {
 
                     <div>
                             <div><b>One-off infrastructure</b></div>
-                        {selected==4 ? 
+                        {selected === 4 ? 
                                 <div>
                                 Hard to build on and maintain
 
