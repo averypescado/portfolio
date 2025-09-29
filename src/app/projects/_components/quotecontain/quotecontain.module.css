@@ -1,0 +1,27 @@
+.contained {
+    width:85%;
+    gap:32px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chunkone{
+    position: relative;
+    height: 150px;
+}
+
+.meetchrome{
+    object-fit: contain;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+
+.chunktwo{
+    position: relative;
+    height: 119px;
+    background-color: #0D1113;
+    overflow: hidden;
+}

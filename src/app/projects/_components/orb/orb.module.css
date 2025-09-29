@@ -1,0 +1,31 @@
+.container {
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index:2000;
+    display: flex;
+    justify-content: center;
+}
+
+.orb {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgb(239, 239, 239); */
+    backdrop-filter: blur(100);
+    border-radius: 16px;
+    box-shadow: 1px blue inset;
+    display: flex;
+    gap:8px;
+    justify-content: center;
+    align-items: center;
+    padding:4px;
+    box-sizing: border-box;
+    width: 978px;
+    height:36px;
+}
+
+.icon{
+    width:36px;
+    height:36px;
+    background-color: rgba(223, 223, 223, 0.519);
+    border-radius: 200px;
+}

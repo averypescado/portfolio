@@ -1,0 +1,153 @@
+/* ====== Base button ====== */
+.shiny {
+    --radius: 16px;
+    --padY: 14px; --padX: 22px;
+    --text: #f6f7fb;
+    --shadow: 0 10px 28px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.12);
+    --border: rgba(255,255,255,.18);
+    --mx: .5; /* mouse x (0..1) */
+    --my: .5; /* mouse y (0..1) */
+  
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    padding: var(--padY) var(--padX);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    color: var(--text);
+    background: transparent;
+    isolation: isolate;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: var(--shadow);
+    transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+  }
+  
+  .shiny:hover { transform: translateY(-1px); }
+  .shiny:active { transform: translateY(0); }
+  
+  .shiny:focus-visible {
+    outline: 0;
+    box-shadow:
+      0 0 0 3px rgba(140,180,255,.5),
+      var(--shadow);
+  }
+  
+  /* Label stays sharp above effects */
+  .label {
+    position: relative;
+    z-index: 6;
+    font-weight: 600;
+    letter-spacing: .2px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.25);
+    user-select: none;
+  }
+  
+  /* Common layer base (all as <i> absolutely positioned) */
+  .shiny > i {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+  
+  /* ====== Color themes ====== */
+  .midnight { --bg1: #0b0d12; --bg2: #0f1422; --tint1: #9fd1ff; --tint2: #a99bff; --tint3: #ffc3e2; --tint4: #ffe39f; }
+  .rose     { --bg1: #2a0f16; --bg2: #3a121c; --tint1: #ffb3c7; --tint2: #ff92b4; --tint3: #ffd2e1; --tint4: #fff2b3; }
+  .teal     { --bg1: #07201e; --bg2: #0b2c29; --tint1: #90ffe9; --tint2: #91d2ff; --tint3: #c0ffea; --tint4: #f6ffba; }
+  .gold     { --bg1: #251c07; --bg2: #2f230a; --tint1: #ffd788; --tint2: #ffe6a6; --tint3: #fff0c6; --tint4: #ffeab0; }
+  
+  /* ====== Sizes ====== */
+  .sm { --radius: 12px; --padY: 10px; --padX: 16px; font-size: .9rem; }
+  .md { --radius: 16px; --padY: 14px; --padX: 22px; font-size: 1rem; }
+  .lg { --radius: 22px; --padY: 18px; --padX: 28px; font-size: 1.08rem; }
+  
+  /* ====== Visual layers ====== */
+  
+  /* 1) Glossy base with subtle “bowed” light using mouse-parallax */
+  .base {
+    z-index: 0;
+    background:
+      radial-gradient(140% 180% at calc(var(--mx)*120%) calc(var(--my)*-60%),
+         rgba(157, 157, 157, 0.25), rgba(255,255,255,0) 45%),
+      radial-gradient(140% 180% at calc((1 - var(--mx))*120%) calc(100% + var(--my)*60%),
+         rgba(255,255,255,.12), rgba(255,255,255,0) 55%),
+      linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 100%);
+    filter: saturate(1.1) contrast(1.05);
+  }
+  
+  /* 2) Animated chromatic rim glow (masked to edges) */
+  .rim {
+    z-index: 2;
+    padding: 2px; /* rim thickness */
+    background: conic-gradient(from 0deg,
+      var(--tint1),
+      var(--tint2),
+      var(--tint3),
+      var(--tint4),
+      var(--tint1));
+    filter: blur(10px);
+    animation: spin 4s linear infinite;
+    -webkit-mask:
+      linear-gradient(#000, #000) content-box,
+      linear-gradient(#000, #000) padding-box;
+    -webkit-mask-composite: xor; mask-composite: exclude;
+    opacity: .85;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  
+  /* 3) Sheen sweep (soft white bar that moves across) */
+  .sheen {
+    z-index: 3;
+    background:
+      linear-gradient(115deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(192, 103, 103, 0.1) 42%,
+        rgba(255,255,255,.30) 50%,
+        rgba(255,255,255,.10) 58%,
+        rgba(255,255,255,0) 100%);
+    transform: translateX(-120%) skewX(-8deg);
+    mix-blend-mode: screen;
+    animation: sweep 3s ease-in-out infinite;
+  }
+  @keyframes sweep {
+    0%, 12%   { transform: translateX(-120%) skewX(-8deg); }
+    45%, 60%  { transform: translateX(120%)  skewX(-8deg); }
+    100%      { transform: translateX(120%)  skewX(-8deg); }
+  }
+  
+  /* 4) Specular highlights (top lip & depth) */
+  .highlights {
+    z-index: 4;
+    background:
+      radial-gradient(60% 38% at 50% 0%,
+        rgba(255,255,255,.35), rgba(255,255,255,0) 70%) top/100% 60% no-repeat,
+      radial-gradient(80% 120% at 50% 0%,
+        rgba(255,255,255,.12), rgba(255,255,255,0) 60%) top/100% 100% no-repeat;
+    mix-blend-mode: screen;
+  }
+  
+  /* 5) Sparkles: tiny bokeh dots that subtly drift */
+  .sparkles {
+    z-index: 5;
+    background:
+      radial-gradient(6px 6px at 20% 30%, rgba(255,255,255,.75), transparent 60%),
+      radial-gradient(4px 4px at 75% 40%, rgba(255,255,255,.5), transparent 60%),
+      radial-gradient(5px 5px at 40% 70%, rgba(255,255,255,.6), transparent 60%);
+    opacity: .7;
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); filter: blur(0.2px); }
+    50%      { transform: translateY(-2px); filter: blur(0.6px); }
+  }
+  
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .rim, .sheen, .sparkles { animation: none; }
+  }
+  
+  /* Optional: subtle “glow” on hover */
+  .shiny:hover { filter: drop-shadow(0 0 20px rgba(160, 200, 255, .25)); }
+  

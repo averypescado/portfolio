@@ -1,0 +1,95 @@
+.demo{
+    width:100%;
+    height:700px;
+    padding: 1rem;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    
+  
+  }
+  .cases{
+    position: sticky;
+    left:0px;
+    top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap:24px;
+    padding:8px;
+    background-color: var(--tone);
+    border-radius:300px;
+    width:fit-content;
+   
+    
+  }
+  
+  .menuItem {
+  list-style: none;
+  height:40px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  background-color: rgba(243, 243, 243, 0.462);
+  border-radius: 200px;
+}
+
+.active{ 
+  background-color: rgb(128, 128, 128);
+  color: white;
+  font-weight: 500;
+}
+
+.active li {
+  font-weight:600
+}
+
+.content p {
+  text-align: left;
+
+}
+
+  
+  .interac{
+    flex: 1;
+    /* background-color: rgb(255, 237, 230); */
+    border-radius: var(--radius);
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chat{
+    width:100%;
+    height:520px;
+    position: relative;
+  }
+
+  .chatimage{
+    object-fit: contain;
+    object-position: top;
+    border-radius: 8px;
+    border: 1px solid rgb(231, 231, 231);
+  }
+
+  .pip{
+    width:100%;
+    height:560px;
+    position: relative;
+
+  }
+
+  .pipimage{
+    object-fit: contain;
+    object-position: top;
+    border-radius: 8px;
+    border: 1px solid rgb(231, 231, 231);
+  }

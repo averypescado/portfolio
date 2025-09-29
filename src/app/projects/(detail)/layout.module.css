@@ -1,0 +1,164 @@
+.main {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 976px;
+  padding: calc(var(--spacing) * 12) 2rem 2rem 2rem;
+  margin: 0 auto;
+  /* Remove min-height: 100vh to prevent overflow */
+  min-height: calc(100vh - 2rem);
+}
+
+.main ul { 
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* .main li {
+  padding-bottom: 16px;
+} */
+
+.section{
+  font-size:1.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top:3rem;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+
+.hero{
+  width:100%;
+  height:500px;
+  background-color: rgb(243, 243, 243);
+  border-radius: var(--radius);
+  position: relative;
+  overflow: clip;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.impact {
+  font-size: 1.875rem;
+  margin-top: 3rem;
+  margin-bottom:3rem;
+  font-weight: 600;
+}
+
+.nav {
+  margin-top: 2rem;
+  position: absolute;
+  color:rgb(52, 46, 46);
+  font-family: sans-serif;
+  top:0px;
+  left:2rem;
+  box-sizing: border-box;
+  padding: .5rem .75rem;
+  border:1px solid rgb(234, 234, 234);
+  border-radius: var(--radius);
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+
+}
+
+.navLink {
+  text-decoration: none;
+} 
+
+
+
+
+
+
+
+
+
+.process{
+  max-width:680px;
+  margin-top: 32px;
+}
+
+
+
+.sidebyside{
+  width:100%;
+  /* background-color:  rgb(247, 247, 247); */
+  display: flex;
+  gap:1rem;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.col{
+  flex: 1;
+  position: relative;
+}
+
+.colone{
+  max-width: 300px;
+  position: relative; 
+}
+
+.pip{
+  object-fit: contain;
+}
+
+.feedback{
+  width:100%;
+  padding: 16px;
+  border-radius: var(--radius);
+  margin-bottom: 24px;
+  border: 1px solid rgb(218, 218, 218);
+}
+
+.meetchrome{
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-top:1rem;
+  margin-bottom: 1rem;
+}
+
+.piccontain{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex{
+  width:100%;
+  display: flex;
+  gap:32px;
+}
+
+.roadmap{
+  position: relative;
+  /* background-color: blue; */
+  width:100%;
+  height:500px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+}
+
+.picfill{
+  object-fit:contain;
+  object-position: center;
+}
+
+
+
+
+

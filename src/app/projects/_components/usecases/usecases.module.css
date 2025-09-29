@@ -1,0 +1,39 @@
+
+  
+  .descpic {
+    flex: 1;
+  }
+
+  .usecases{
+    width: 100%;
+    display: flex;
+    gap:24px;
+  }
+  
+  .usecase{
+    flex: 1;
+    display: flexbox;
+    flex-direction: column;
+    border-radius: var(--radius);
+    background-color: aliceblue;
+    background-color: rgb(243, 243, 243);
+    padding: .5rem;
+  }
+
+  .multi{
+    width:100%;
+    object-fit:cover;
+    border-radius: var(--radius);
+  }
+
+  .more{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+    padding-right:.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
